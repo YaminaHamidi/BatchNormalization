@@ -87,7 +87,7 @@ class Batch_Normalization(nn.Module):
         
     def forward(self, X):
         Y, self.running_mean, self.running_var = batch_normalization(
-            X, self.gamma, self.beta, self.running_mean, self.running_var, eps=1e-5, momentum=0.9)
+            X, self.gamma, self.beta, self.running_mean, self.running_var, eps=1e-5, t=0.9)
         return Y
     
 
