@@ -53,7 +53,7 @@ def batch_normalization(X, gamma, beta, running_mean, running_var, eps,t):
             var = torch.mean( torch.mean( torch.mean((X-mean)**2, dim=3, keepdim=True) , dim=2 , keepdim=True), dim=0, keepdim=True)
         ## Batch Normalization
         X_norm = (X-mean) / torch.sqrt(var+eps)
-        ## Update moving statistics 
+        ## Update moving average statistics 
         running_mean = t * running_mean + (1.0 - t) * mean
         running_var = t * running_var + (1.0 - t) * var 
          
