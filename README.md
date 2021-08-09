@@ -8,4 +8,4 @@ Large data values can cause instabilities in the network. The larger the value t
 
 To elaviate this problem the paper [1] suggests to scale each mini-batch of data before input into the hidden layers, which is believed to keep the distribution of the data stable throughout the training process. 
 
-[1] : Paper: IOFFE, Sergey et SZEGEDY, Christian. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In : International conference on machine learning. PMLR, 2015. p. 448-456.
+[1] : IOFFE, Sergey et SZEGEDY, Christian. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In : International conference on machine learning. PMLR, 2015. p. 448-456.
